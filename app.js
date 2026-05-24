@@ -15,6 +15,7 @@ const trackingRoutes = require("./routes/trackingRoutes");
 const supplierRoutes = require("./routes/supplierRoutes");
 const contactRoutes = require("./routes/contactRoutes");
 const purchaseOrderRoutes = require("./routes/purchaseOrderRoutes");
+const dashboardRoutes = require("./routes/dashboardRoutes");
 
 const app = express();
 
@@ -35,6 +36,7 @@ app.use("/api/tracking", trackingRoutes);
 app.use("/api/suppliers", supplierRoutes);
 app.use("/api/supplier-contacts", contactRoutes);
 app.use("/api/purchase-orders", purchaseOrderRoutes);
+app.use("/api/dashboard", dashboardRoutes);
 
 
 app.get("/", (req, res) => {
